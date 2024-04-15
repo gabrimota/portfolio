@@ -1,0 +1,30 @@
+.container{
+    padding: 40px 32px;
+    // define o Container como uma grade, ou seja, ele vai organizar os seus filhos em uma grade.
+    display: grid;
+    // Esta linha define o tamanho das colunas da grade(4 grades com tamanho automatico que se ajustar).
+    // repeat especifica um padrão repetido de valores (repete o valor auto)
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: 
+    "header"
+    "buttons"
+    "experience"
+    "infos"
+    ;
+}
+    @media (min-width:768px){
+        .container{
+           padding: 70px 60px;
+            height: 100vh;
+            grid-template-rows: fit-content(100%);
+            grid-template-columns: 60% 30% ;
+            align-items: center;
+            justify-items: start;
+            justify-content:space-between ;
+            grid-template-areas:
+            "header infos"
+            "experience empty-1"
+            "buttons empty-2"
+            ;
+        }
+    }
