@@ -6,7 +6,7 @@ return(
 <>
 <div className={styles.Header}>
     <div>
-        <h1> Gabriel Bomfim Mota da Silva</h1>
+        <h1> Hi, i´m Gabriel Bomfim Mota da Silva</h1>
         <h2> Programador Iniciante </h2>
     </div>
 

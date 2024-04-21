@@ -1,8 +1,10 @@
 
 // aqui ficam as importações que vou utilizar
+import Experience from "./components/Experience/experience";
 import Header from "./components/Header/header"
 import React from "react";
 import "./home.scss"
+import { GiBrazilFlag } from "react-icons/gi";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
@@ -23,20 +25,14 @@ export default function Home() {
    <main className="container">  
     {/* classe feita para o "header" é a img , meu nome e oq eu faço */}
     <Header/>
-  <div className="experience">
-        <h2> Experiencia</h2>
-        <p> texto</p>
-    <div className="experience-time">
-     <h3>1 ano de faculdade / React Iniciante / Flutter Iniciante</h3>
-     </div>
-     </div>
-
-   <div className="infos"> 
+    <div className="infos"> 
+    <Experience/>
+    
     <h3>Languages</h3>
    <div className="language-infos">
-    <span>🇧🇷 Pt-Br Native Speaker</span>
+    <span><GiBrazilFlag style={{color:"yellow" , height:"100px", width:"100px", }} /> Pt-Br Native Speaker</span>
     <span> 🇺🇸 Inglês Básico</span>
-   </div>
+    </div>
 
    <div className="education">
     <h3>Education</h3>
@@ -50,8 +46,8 @@ export default function Home() {
     </div>
     </div>
    
+   
    </div>
-    
     </main>
     
   );
